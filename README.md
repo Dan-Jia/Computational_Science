@@ -8,5 +8,6 @@ This repository contains algorithms about:
 Involves:
 
 CUDA, Pthreads, SIMD
+
 (More specific information for each algorithm can be found in the .pdf or .JPG file in the same folder)
 
