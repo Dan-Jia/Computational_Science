@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.0)
+project(altSchwarzCG LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 11)
+set (CMAKE_CXX_FLAGS "-O3 -march=native")
+
+find_package(Boost 1.66.0 COMPONENTS chrono thread REQUIRED)
+   if(Boost_FOUND)
+     include_directories(${Boost_INCLUDE_DIRS})
+     add_executable(altSchwarzCG altSchwarzCG.cpp)
+     target_link_libraries(altSchwarzCG ${Boost_LIBRARIES})
+   endif()

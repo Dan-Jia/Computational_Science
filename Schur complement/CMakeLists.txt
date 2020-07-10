@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.0)
+project(aufg15 LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 11)
+set (CMAKE_CXX_FLAGS "-O3 -march=native")
+
+find_package(Boost 1.66.0 COMPONENTS chrono thread REQUIRED)
+   if(Boost_FOUND)
+     include_directories(${Boost_INCLUDE_DIRS})
+     add_executable(aufg15 aufg15.cpp)
+     target_link_libraries(aufg15 ${Boost_LIBRARIES})
+   endif()
