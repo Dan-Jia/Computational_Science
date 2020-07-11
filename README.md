@@ -5,7 +5,7 @@ This repository contains algorithms about:
 * Solve linear equations (Jacobi, Gauss-Seidel, CG methods)
 * Domain decomposition method (overlapping: Schwarz alternating method; non-overlapping: Shure complement)
 
-Involves:
+Involving:
 
 CUDA, Pthreads, SIMD
 
